@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/styles.css">
     <title>React Samples</title>
 </head>
 
@@ -18,8 +19,11 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
     </script>
 
+    <script type="module" src="/src/js/functional_clock.js"></script>
+
     <script>
-        // Pure React and JavaScript code
+        const dish = React.createElement('h1', { id: 'recipe-0' }, 'Baked Salmon');
+        ReactDOM.render(dish, document.getElementById('root'));
     </script>
 </body>
 

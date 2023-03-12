@@ -1,4 +1,5 @@
-import {flowRight as compose} from 'lodash';
+const compose = (...fns) => arg =>
+    fns.reduce((composed, f) => f(composed), arg);
 
 const oneSecond = () => 1000;
 const getCurrentTime = () => new Date();

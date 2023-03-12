@@ -24,15 +24,15 @@ button {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px (62.5% of 16px)
 }
 
 /* Set core root defaults */
@@ -57,8 +57,7 @@ a:visited {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -81,6 +80,7 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {
