@@ -58,7 +58,7 @@ const formatClock = (format) => (time) =>
  */
 const prependZero = (key) => (clockTime) => ({
     ...clockTime,
-    key: clockTime[key] < 10 ? '0' + clockTime[key] : clockTime[key],
+    [key]: clockTime[key] < 10 ? '0' + clockTime[key] : clockTime[key],
 });
 
 /**
